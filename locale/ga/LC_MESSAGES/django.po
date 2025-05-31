@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-05-29 03:18+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin, 2025\n"
 "Language-Team: Irish (https://app.transifex.com/nextcloud/teams/64236/ga/)\n"
@@ -314,7 +314,7 @@ msgstr "Rátálacha aip"
 msgid "Full name"
 msgstr "Ainm iomlán"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "Ríomhphost"
 
@@ -804,7 +804,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "Logáil isteach"
@@ -863,18 +862,20 @@ msgstr ""
 "d’fhillteán turscair. Seachas sin déan teagmháil linn mura bhfaigheann tú é "
 "i gceann cúpla bomaite."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "Droch Chomhartha API"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "Athraigh do phasfhocal"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "Droch Chomhartha API"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -884,10 +885,6 @@ msgstr ""
 "Bhí an nasc athshocraithe pasfhocail neamhbhailí, b'fhéidir toisc gur "
 "úsáideadh cheana é.  Iarr le do thoil <a "
 "href=\"%(passwd_reset_url)s\">phasfhocal nua a athshocrú1</a>."
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "Tá do phasfhocal athraithe anois."
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -1670,15 +1667,15 @@ msgstr "Leanúint ar aghaidh"
 msgid "Provided email address is not valid."
 msgstr "Níl an seoladh ríomhphoist bailí."
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "Ainm"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "Sloinne"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
@@ -1686,32 +1683,32 @@ msgstr ""
 "Ba mhaith liom nuacht forbróir aipeanna agus nuashonruithe a fháil ó "
 "Nextcloud trí ríomhphost"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "Do sheoladh ríomhphoist"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "Do phasfhocal"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "* Ag teastáil má tá an cuntas cláraithe le pasfhocal"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr ""
 "Ní mheaitseálann an seoladh ríomhphoist a thugtar do sheoladh ríomhphoist"
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "Pasfhocal neamhbhailí"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "Deimhnigh Pasfhocal"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
@@ -1721,17 +1718,13 @@ msgstr ""
 "chun athruithe neamhúdaraithe ar shonraí criticiúla cuntais a chosc. Ní "
 "nuashonraíonn an réimse seo do phasfhocal!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "Tá an seoladh ríomhphoist seo bainteach le cuntas eile cheana féin."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "Tá pasfhocal ag teastáil chun na réimsí seo a athrú."
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "Seoladh ríomhphoist"
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"

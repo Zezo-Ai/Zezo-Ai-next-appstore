@@ -8,7 +8,6 @@
 # 한영빈 (Youngbin Han) <sukso96100@gmail.com>, 2017
 # Jae Yoon KIM <zaywalker@gmail.com>, 2020
 # 장성현 <pig492@gmail.com>, 2021
-# 허석 <ludishur@whitehorizon.net>, 2022
 # Andy Scherzinger <info@andy-scherzinger.de>, 2022
 # Woojin Son, 2023
 # OHORA YOON, 2023
@@ -25,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-05-29 03:18+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
 "Last-Translator: 이상오, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/nextcloud/teams/64236/ko/)\n"
@@ -321,7 +320,7 @@ msgstr "앱 평가"
 msgid "Full name"
 msgstr "전체 이름"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "이메일"
 
@@ -801,7 +800,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "로그인"
@@ -853,18 +851,20 @@ msgid ""
 "spam folder. Otherwise contact us if you do not receive it in a few minutes."
 msgstr "이메일을 보냈습니다. 이메일을 받지 못했다면 스팸 폴더를 확인해 주세요. 수 분 이내에 받지 못하면 저희에게 연락해 주세요."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "잘못된 API 토큰"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "암호 변경"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "잘못된 API 토큰"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -873,10 +873,6 @@ msgid ""
 msgstr ""
 "암호 변경 링크가 잘못되었거나 이미 사용되었을 수도 있습니다. <a href=\"%(passwd_reset_url)s\">새 암호 초기화"
 " 요청</a> 링크를 클릭하십시오."
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "암호가 변경되었습니다."
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -1630,45 +1626,45 @@ msgstr "계속"
 msgid "Provided email address is not valid."
 msgstr "입력한 이메일이 잘못되었습니다."
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "이름"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "성"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
 msgstr "Nextcloud에서 앱 개발자 소식과 업데이트를 이메일로 받고 싶습니다."
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "내 이메일 주소"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "당신의 암호"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "*암호로 계정을 등록할 때 필수"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr "제공된 이메일 주소가 귀하의 것과 일치하지 않습니다."
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "잘못된 암호"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "암호 확인"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
@@ -1677,17 +1673,13 @@ msgstr ""
 "중요한 계정 정보가 무단으로 변경되는 것을 막기 위해 이름, 성, 이메일을 변경할 때 필요합니다. 이 입력란은 당신의 암호를 변경하지 "
 "않습니다!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "다른 계정에서 이 이메일 주소를 사용하고 있습니다."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "이 입력란을 바꾸려면 암호가 필요합니다."
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "이메일 주소"
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"
