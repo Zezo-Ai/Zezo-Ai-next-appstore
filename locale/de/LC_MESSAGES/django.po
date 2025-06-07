@@ -19,21 +19,21 @@
 # Lollo, 2024
 # Mark Ziegler <mark.ziegler@rakekniven.de>, 2024
 # benni44 <benedikt.streicher@hs-nordhausen.de>, 2024
-# Markus Eckstein, 2024
 # Frank Netz, 2024
 # Andy Scherzinger <info@andy-scherzinger.de>, 2025
 # Mario Siegmann <mario_siegmann@web.de>, 2025
 # Joachim Sokolowski, 2025
 # Martin Wilichowski, 2025
+# Markus Eckstein, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-06-07 03:07+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Martin Wilichowski, 2025\n"
+"Last-Translator: Markus Eckstein, 2025\n"
 "Language-Team: German (https://app.transifex.com/nextcloud/teams/64236/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +59,7 @@ msgid "Download"
 msgstr "Herunterladen"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:220
+#: nextcloudappstore/core/templates/app/detail.html:239
 msgid "Bad"
 msgstr "Schlecht"
 
@@ -68,7 +68,7 @@ msgid "OK"
 msgstr "OK"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:214
+#: nextcloudappstore/core/templates/app/detail.html:233
 msgid "Good"
 msgstr "Gut"
 
@@ -192,7 +192,7 @@ msgid "Issue tracker URL"
 msgstr "Issue-Tracking-System URL"
 
 #: nextcloudappstore/core/models.py:155 nextcloudappstore/core/models.py:492
-#: nextcloudappstore/core/templates/app/detail.html:111
+#: nextcloudappstore/core/templates/app/detail.html:130
 msgid "Homepage"
 msgstr "Homepage"
 
@@ -215,7 +215,7 @@ msgid "App owner"
 msgstr "App-Inhaber"
 
 #: nextcloudappstore/core/models.py:163
-#: nextcloudappstore/core/templates/app/detail.html:88
+#: nextcloudappstore/core/templates/app/detail.html:107
 msgid "Co-Maintainers"
 msgstr "Co-Betreuer"
 
@@ -333,7 +333,7 @@ msgstr "App Bewertungen"
 msgid "Full name"
 msgstr "Vollständiger Name"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "E-Mail"
 
@@ -561,7 +561,7 @@ msgid "Category name which will be presented to the user"
 msgstr "Kategoriename der dem Benutzer angezeigt wird"
 
 #: nextcloudappstore/core/models.py:718
-#: nextcloudappstore/core/templates/app/detail.html:103
+#: nextcloudappstore/core/templates/app/detail.html:122
 #: nextcloudappstore/scaffolding/forms.py:54
 #: nextcloudappstore/scaffolding/forms.py:88
 msgid "Categories"
@@ -681,7 +681,7 @@ msgid "App rating deletions"
 msgstr "Löschungen von App-Bewertungen"
 
 #: nextcloudappstore/core/models.py:883
-#: nextcloudappstore/core/templates/app/detail.html:185
+#: nextcloudappstore/core/templates/app/detail.html:204
 msgid "Nextcloud version"
 msgstr "Nextcloud-Version"
 
@@ -823,7 +823,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "Anmelden"
@@ -881,18 +880,20 @@ msgstr ""
 "überprüfe bitte deinen Spam-Ordner. Andernfalls kontaktiere uns, wenn du sie"
 " nicht innerhalb weniger Minuten erhältst."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "Falscher API-Token"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "Passwort ändern"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "Falscher API-Token"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -903,10 +904,6 @@ msgstr ""
 "liegen, dass er bereits benutzt wurde. Bitte einen <a "
 "href=\"%(passwd_reset_url)s\">neuen Link zum Rücksetzen des Passwortes </a> "
 "anfordern."
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "Dein Passwort wurde geändert."
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -1009,129 +1006,133 @@ msgid "Community rating"
 msgstr "Community-Bewertung"
 
 #: nextcloudappstore/core/templates/app/detail.html:78
-msgid "Author"
-msgstr "Autor"
+msgid "Authors"
+msgstr ""
 
-#: nextcloudappstore/core/templates/app/detail.html:100
+#: nextcloudappstore/core/templates/app/detail.html:97
+msgid "Owner"
+msgstr "Besitzer"
+
+#: nextcloudappstore/core/templates/app/detail.html:119
 msgid "Last updated"
 msgstr "Zuletzt aktualisiert"
 
-#: nextcloudappstore/core/templates/app/detail.html:108
+#: nextcloudappstore/core/templates/app/detail.html:127
 msgid "Resources"
 msgstr "Ressourcen"
 
-#: nextcloudappstore/core/templates/app/detail.html:114
+#: nextcloudappstore/core/templates/app/detail.html:133
 msgid "User documentation"
 msgstr "Benutzer-Dokumentation"
 
-#: nextcloudappstore/core/templates/app/detail.html:117
+#: nextcloudappstore/core/templates/app/detail.html:136
 msgid "Admin documentation"
 msgstr "Dokumentation für die Administration"
 
-#: nextcloudappstore/core/templates/app/detail.html:120
+#: nextcloudappstore/core/templates/app/detail.html:139
 #: nextcloudappstore/core/templates/nav.html:30
 msgid "Developer documentation"
 msgstr "Entwickler-Dokumentation"
 
-#: nextcloudappstore/core/templates/app/detail.html:126
+#: nextcloudappstore/core/templates/app/detail.html:145
 msgid "Interact"
 msgstr "Interagieren"
 
-#: nextcloudappstore/core/templates/app/detail.html:132
+#: nextcloudappstore/core/templates/app/detail.html:151
 msgid "Report problem"
 msgstr "Problem melden"
 
-#: nextcloudappstore/core/templates/app/detail.html:138
+#: nextcloudappstore/core/templates/app/detail.html:157
 msgid "Request feature"
 msgstr "Funktion vorschlagen"
 
-#: nextcloudappstore/core/templates/app/detail.html:145
+#: nextcloudappstore/core/templates/app/detail.html:164
 msgid "Ask questions or discuss"
 msgstr "Fragen stellen oder diskutieren"
 
-#: nextcloudappstore/core/templates/app/detail.html:150
+#: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Donate"
 msgstr "Spende"
 
-#: nextcloudappstore/core/templates/app/detail.html:163
+#: nextcloudappstore/core/templates/app/detail.html:182
 msgid "Need Enterprise Support?"
 msgstr "Wird Enterprise-Unterstützung benötigt?"
 
-#: nextcloudappstore/core/templates/app/detail.html:168
+#: nextcloudappstore/core/templates/app/detail.html:187
 msgid "Request quote"
 msgstr "Angebot anfordern"
 
-#: nextcloudappstore/core/templates/app/detail.html:170
+#: nextcloudappstore/core/templates/app/detail.html:189
 msgid "Recommended for large Nextcloud installations only."
 msgstr "Nur für große Nextcloud-Installationen empfohlen."
 
-#: nextcloudappstore/core/templates/app/detail.html:181
+#: nextcloudappstore/core/templates/app/detail.html:200
 #: nextcloudappstore/core/templates/app/releases.html:7
 #: nextcloudappstore/core/templates/app/releases.html:15
 msgid "Releases"
 msgstr "Veröffentlichungen"
 
-#: nextcloudappstore/core/templates/app/detail.html:186
+#: nextcloudappstore/core/templates/app/detail.html:205
 msgid "Stable channel"
 msgstr "Stabiler Kanal"
 
-#: nextcloudappstore/core/templates/app/detail.html:187
+#: nextcloudappstore/core/templates/app/detail.html:206
 msgid "Nightly channel"
 msgstr "Nightly-Kanal"
 
-#: nextcloudappstore/core/templates/app/detail.html:188
+#: nextcloudappstore/core/templates/app/detail.html:207
 msgid "All releases"
 msgstr "Alle Veröffentlichungen"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 #: nextcloudappstore/core/templates/app/releases.html:26
 #: nextcloudappstore/core/templates/app/releases.html:89
 msgid "nightly"
 msgstr "nächtliche Version"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 msgid "Unstable"
 msgstr "Instabil"
 
-#: nextcloudappstore/core/templates/app/detail.html:217
+#: nextcloudappstore/core/templates/app/detail.html:236
 msgid "Ok"
 msgstr "Ok"
 
-#: nextcloudappstore/core/templates/app/detail.html:238
-#: nextcloudappstore/core/templates/app/detail.html:252
+#: nextcloudappstore/core/templates/app/detail.html:257
+#: nextcloudappstore/core/templates/app/detail.html:271
 msgid "Appeal for spam"
 msgstr "Meldung wegen Spam"
 
-#: nextcloudappstore/core/templates/app/detail.html:243
-#: nextcloudappstore/core/templates/app/detail.html:256
+#: nextcloudappstore/core/templates/app/detail.html:262
+#: nextcloudappstore/core/templates/app/detail.html:275
 msgid "Cancel spam appeal"
 msgstr "Spam-Meldung abbrechen"
 
-#: nextcloudappstore/core/templates/app/detail.html:247
+#: nextcloudappstore/core/templates/app/detail.html:266
 msgid "Delete spam comment"
 msgstr "Spam-Kommentar löschen"
 
-#: nextcloudappstore/core/templates/app/detail.html:267
+#: nextcloudappstore/core/templates/app/detail.html:286
 msgid "No comments found."
 msgstr "Keine Kommentare vorhanden."
 
-#: nextcloudappstore/core/templates/app/detail.html:276
+#: nextcloudappstore/core/templates/app/detail.html:295
 msgid "Comments"
 msgstr "Kommentare"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate app"
 msgstr "App bewerten"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate integration"
 msgstr "Einbindung bewerten"
 
-#: nextcloudappstore/core/templates/app/detail.html:289
+#: nextcloudappstore/core/templates/app/detail.html:308
 msgid "Your comment"
 msgstr "Dein Kommentar"
 
-#: nextcloudappstore/core/templates/app/detail.html:294
+#: nextcloudappstore/core/templates/app/detail.html:313
 msgid ""
 "Rating comments support <a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
@@ -1146,15 +1147,15 @@ msgstr ""
 "werden über deine Bewertung informiert. Eine Bewertung ohne Kommentar wird "
 "zwar gewertet, aber unten nicht angezeigt."
 
-#: nextcloudappstore/core/templates/app/detail.html:299
+#: nextcloudappstore/core/templates/app/detail.html:318
 msgid "Update rating"
 msgstr "Bewertung aktualisieren"
 
-#: nextcloudappstore/core/templates/app/detail.html:301
+#: nextcloudappstore/core/templates/app/detail.html:320
 msgid "Submit rating"
 msgstr "Bewertung übermitteln"
 
-#: nextcloudappstore/core/templates/app/detail.html:312
+#: nextcloudappstore/core/templates/app/detail.html:331
 msgid "Switch language for the comments:"
 msgstr "Sprache für die Kommentare wechseln:"
 
@@ -1697,15 +1698,15 @@ msgstr "Fortsetzen"
 msgid "Provided email address is not valid."
 msgstr "Angegebene E-Mail-Adresse ist ungültig."
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "Vorname"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "Nachname"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
@@ -1713,31 +1714,31 @@ msgstr ""
 "Ich möchte App-Entwickler-Neuigkeiten und Updates von Nextcloud per E-Mail "
 "erhalten (optional)"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "Deine E-Mail-Adresse"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "Dein Passwort"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "*Erforderlich, wenn das Konto mit einem Passwort registriert ist"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr "Die eingegebene E-Mail-Adresse entspricht nicht deiner E-Mail-Adresse"
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "Ungültiges Passwort"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "Passwort bestätigen"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
@@ -1747,17 +1748,13 @@ msgstr ""
 "ändest, um unbefugte Änderungen wichtiger Kontodetails zu verhindern. Dieses"
 " Feld aktualisiert dein Passwort nicht!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "Diese E-Mail-Adresse ist bereits mit einem anderen Konto verknüpft."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "Zum Ändern dieser Felder ist ein Passwort erforderlich."
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "E-Mail-Adresse"
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"

@@ -39,18 +39,18 @@
 # Pascal Janus <pascal_janus@163.com>, 2024
 # Danoc_1z <jimdoxin@gmail.com>, 2024
 # 郭云鹤(Guo Yunhe)🇨🇳 <guoyunhebrave@gmail.com>, 2024
-# Gloryandel, 2024
 # TUCAOEVER, 2024
 # Phonebook3599, 2025
+# Gloryandel, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-06-07 03:07+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Phonebook3599, 2025\n"
+"Last-Translator: Gloryandel, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/nextcloud/teams/64236/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,7 +76,7 @@ msgid "Download"
 msgstr "下载"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:220
+#: nextcloudappstore/core/templates/app/detail.html:239
 msgid "Bad"
 msgstr "不佳"
 
@@ -85,7 +85,7 @@ msgid "OK"
 msgstr "还可以"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:214
+#: nextcloudappstore/core/templates/app/detail.html:233
 msgid "Good"
 msgstr "不错"
 
@@ -204,7 +204,7 @@ msgid "Issue tracker URL"
 msgstr "议题跟踪地址"
 
 #: nextcloudappstore/core/models.py:155 nextcloudappstore/core/models.py:492
-#: nextcloudappstore/core/templates/app/detail.html:111
+#: nextcloudappstore/core/templates/app/detail.html:130
 msgid "Homepage"
 msgstr "主页"
 
@@ -227,7 +227,7 @@ msgid "App owner"
 msgstr "应用所有者"
 
 #: nextcloudappstore/core/models.py:163
-#: nextcloudappstore/core/templates/app/detail.html:88
+#: nextcloudappstore/core/templates/app/detail.html:107
 msgid "Co-Maintainers"
 msgstr "共同维护者"
 
@@ -342,7 +342,7 @@ msgstr "应用评分"
 msgid "Full name"
 msgstr "全名"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "电子邮件 "
 
@@ -566,7 +566,7 @@ msgid "Category name which will be presented to the user"
 msgstr "分类的名称将呈现给用户"
 
 #: nextcloudappstore/core/models.py:718
-#: nextcloudappstore/core/templates/app/detail.html:103
+#: nextcloudappstore/core/templates/app/detail.html:122
 #: nextcloudappstore/scaffolding/forms.py:54
 #: nextcloudappstore/scaffolding/forms.py:88
 msgid "Categories"
@@ -686,7 +686,7 @@ msgid "App rating deletions"
 msgstr "删除应用评分"
 
 #: nextcloudappstore/core/models.py:883
-#: nextcloudappstore/core/templates/app/detail.html:185
+#: nextcloudappstore/core/templates/app/detail.html:204
 msgid "Nextcloud version"
 msgstr "Nextcloud版本"
 
@@ -816,7 +816,6 @@ msgstr "此电子邮件确认链接已过期或无效。请 <a href=\"%(email_ur
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "登录"
@@ -868,28 +867,26 @@ msgid ""
 "spam folder. Otherwise contact us if you do not receive it in a few minutes."
 msgstr "我们已向你发送了一封邮件。如果你没有收到该邮件，请检查你的垃圾邮件。如果你在几分钟后仍未收到邮件，请联系我们。"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "错误的API令牌"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "更改密码"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "错误的API令牌"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
 "reset</a>."
 msgstr "密码重置链接无效，可能是因为它已经被使用了。请请求 <a href=\"%(passwd_reset_url)s\">新的密码重置链接</a>。"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "您的密码已更改。"
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -980,129 +977,133 @@ msgid "Community rating"
 msgstr "社区评分"
 
 #: nextcloudappstore/core/templates/app/detail.html:78
-msgid "Author"
-msgstr "作者"
+msgid "Authors"
+msgstr ""
 
-#: nextcloudappstore/core/templates/app/detail.html:100
+#: nextcloudappstore/core/templates/app/detail.html:97
+msgid "Owner"
+msgstr "所有者"
+
+#: nextcloudappstore/core/templates/app/detail.html:119
 msgid "Last updated"
 msgstr "最后更新"
 
-#: nextcloudappstore/core/templates/app/detail.html:108
+#: nextcloudappstore/core/templates/app/detail.html:127
 msgid "Resources"
 msgstr "资源"
 
-#: nextcloudappstore/core/templates/app/detail.html:114
+#: nextcloudappstore/core/templates/app/detail.html:133
 msgid "User documentation"
 msgstr "使用者文档"
 
-#: nextcloudappstore/core/templates/app/detail.html:117
+#: nextcloudappstore/core/templates/app/detail.html:136
 msgid "Admin documentation"
 msgstr "管理员文档"
 
-#: nextcloudappstore/core/templates/app/detail.html:120
+#: nextcloudappstore/core/templates/app/detail.html:139
 #: nextcloudappstore/core/templates/nav.html:30
 msgid "Developer documentation"
 msgstr "开发者文档"
 
-#: nextcloudappstore/core/templates/app/detail.html:126
+#: nextcloudappstore/core/templates/app/detail.html:145
 msgid "Interact"
 msgstr "交互"
 
-#: nextcloudappstore/core/templates/app/detail.html:132
+#: nextcloudappstore/core/templates/app/detail.html:151
 msgid "Report problem"
 msgstr "报告问题"
 
-#: nextcloudappstore/core/templates/app/detail.html:138
+#: nextcloudappstore/core/templates/app/detail.html:157
 msgid "Request feature"
 msgstr "请求功能"
 
-#: nextcloudappstore/core/templates/app/detail.html:145
+#: nextcloudappstore/core/templates/app/detail.html:164
 msgid "Ask questions or discuss"
 msgstr "提问或讨论"
 
-#: nextcloudappstore/core/templates/app/detail.html:150
+#: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Donate"
 msgstr "捐款"
 
-#: nextcloudappstore/core/templates/app/detail.html:163
+#: nextcloudappstore/core/templates/app/detail.html:182
 msgid "Need Enterprise Support?"
 msgstr "需要企业支持吗？"
 
-#: nextcloudappstore/core/templates/app/detail.html:168
+#: nextcloudappstore/core/templates/app/detail.html:187
 msgid "Request quote"
 msgstr "请求报价"
 
-#: nextcloudappstore/core/templates/app/detail.html:170
+#: nextcloudappstore/core/templates/app/detail.html:189
 msgid "Recommended for large Nextcloud installations only."
 msgstr "仅推荐用于大型 Nextcloud 安装。"
 
-#: nextcloudappstore/core/templates/app/detail.html:181
+#: nextcloudappstore/core/templates/app/detail.html:200
 #: nextcloudappstore/core/templates/app/releases.html:7
 #: nextcloudappstore/core/templates/app/releases.html:15
 msgid "Releases"
 msgstr "发行版"
 
-#: nextcloudappstore/core/templates/app/detail.html:186
+#: nextcloudappstore/core/templates/app/detail.html:205
 msgid "Stable channel"
 msgstr "稳定通道"
 
-#: nextcloudappstore/core/templates/app/detail.html:187
+#: nextcloudappstore/core/templates/app/detail.html:206
 msgid "Nightly channel"
 msgstr "每夜通道"
 
-#: nextcloudappstore/core/templates/app/detail.html:188
+#: nextcloudappstore/core/templates/app/detail.html:207
 msgid "All releases"
 msgstr "所有版本"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 #: nextcloudappstore/core/templates/app/releases.html:26
 #: nextcloudappstore/core/templates/app/releases.html:89
 msgid "nightly"
 msgstr "每夜更新"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 msgid "Unstable"
 msgstr "不稳定"
 
-#: nextcloudappstore/core/templates/app/detail.html:217
+#: nextcloudappstore/core/templates/app/detail.html:236
 msgid "Ok"
 msgstr "好"
 
-#: nextcloudappstore/core/templates/app/detail.html:238
-#: nextcloudappstore/core/templates/app/detail.html:252
+#: nextcloudappstore/core/templates/app/detail.html:257
+#: nextcloudappstore/core/templates/app/detail.html:271
 msgid "Appeal for spam"
 msgstr "垃圾邮件申诉"
 
-#: nextcloudappstore/core/templates/app/detail.html:243
-#: nextcloudappstore/core/templates/app/detail.html:256
+#: nextcloudappstore/core/templates/app/detail.html:262
+#: nextcloudappstore/core/templates/app/detail.html:275
 msgid "Cancel spam appeal"
 msgstr "取消垃圾邮件申诉"
 
-#: nextcloudappstore/core/templates/app/detail.html:247
+#: nextcloudappstore/core/templates/app/detail.html:266
 msgid "Delete spam comment"
 msgstr "删除垃圾评论"
 
-#: nextcloudappstore/core/templates/app/detail.html:267
+#: nextcloudappstore/core/templates/app/detail.html:286
 msgid "No comments found."
 msgstr "没有发现评论。"
 
-#: nextcloudappstore/core/templates/app/detail.html:276
+#: nextcloudappstore/core/templates/app/detail.html:295
 msgid "Comments"
 msgstr "评论"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate app"
 msgstr "评价应用"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate integration"
 msgstr "评价集成"
 
-#: nextcloudappstore/core/templates/app/detail.html:289
+#: nextcloudappstore/core/templates/app/detail.html:308
 msgid "Your comment"
 msgstr "你的评论"
 
-#: nextcloudappstore/core/templates/app/detail.html:294
+#: nextcloudappstore/core/templates/app/detail.html:313
 msgid ""
 "Rating comments support <a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
@@ -1113,15 +1114,15 @@ msgstr ""
 "评分以支持<a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>。请不要使用评分反馈问题或请求功能。开发者和用户都不会收到评分提醒。不含评论的评分会被统计，但不会在下方列表显示。"
 
-#: nextcloudappstore/core/templates/app/detail.html:299
+#: nextcloudappstore/core/templates/app/detail.html:318
 msgid "Update rating"
 msgstr "更新评分"
 
-#: nextcloudappstore/core/templates/app/detail.html:301
+#: nextcloudappstore/core/templates/app/detail.html:320
 msgid "Submit rating"
 msgstr "提交评分"
 
-#: nextcloudappstore/core/templates/app/detail.html:312
+#: nextcloudappstore/core/templates/app/detail.html:331
 msgid "Switch language for the comments:"
 msgstr "切换评论语言："
 
@@ -1637,62 +1638,58 @@ msgstr "继续"
 msgid "Provided email address is not valid."
 msgstr "提供的邮箱地址无效。"
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "名字"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "姓氏"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
 msgstr "我想通过邮件接受来自于 Nextcloud 应用开发者消息以及更新提示"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "您的电子邮件地址 "
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "您的密码"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "*如果账号是通过密码注册的，则此处为必填项。"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr "所给的电子邮件地址与您的电子邮件地址不匹配 "
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "无效的密码"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "确认密码"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
 "not update your password!"
 msgstr "在你更改你的姓名、邮件地址时，你必须提供此信息以防止未经授权更改关键账户信息。该位字段不会更新你的密码。"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "此电子邮件地址已与另一账号关联。"
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "需要输入密码才能更改这些字段。"
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "电子邮箱 "
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"
