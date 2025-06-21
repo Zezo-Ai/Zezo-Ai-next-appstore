@@ -14,19 +14,19 @@
 # caos30 <sergio.cero@gmail.com>, 2023
 # dmanye <dmanye@gmail.com>, 2024
 # Assumpta, 2024
-# Marc Riera <marcriera@softcatala.org>, 2024
 # Jordi Sanfeliu <jordi@fibranet.cat>, 2024
 # Pràctiques bTactic <practiques@btactic.com>, 2024
 # Leandro Navarro <leandro@pangea.org>, 2025
+# Marc Riera <marcriera@softcatala.org>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-06-07 03:07+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Leandro Navarro <leandro@pangea.org>, 2025\n"
+"Last-Translator: Marc Riera <marcriera@softcatala.org>, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/nextcloud/teams/64236/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgid "Download"
 msgstr "Baixa"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:220
+#: nextcloudappstore/core/templates/app/detail.html:239
 msgid "Bad"
 msgstr "Dolenta"
 
@@ -61,7 +61,7 @@ msgid "OK"
 msgstr "Correcta"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:214
+#: nextcloudappstore/core/templates/app/detail.html:233
 msgid "Good"
 msgstr "Bona"
 
@@ -184,7 +184,7 @@ msgid "Issue tracker URL"
 msgstr "URL del seguiment d'errors"
 
 #: nextcloudappstore/core/models.py:155 nextcloudappstore/core/models.py:492
-#: nextcloudappstore/core/templates/app/detail.html:111
+#: nextcloudappstore/core/templates/app/detail.html:130
 msgid "Homepage"
 msgstr "Pàgina d'inici"
 
@@ -207,7 +207,7 @@ msgid "App owner"
 msgstr "Propietari de l'aplicació"
 
 #: nextcloudappstore/core/models.py:163
-#: nextcloudappstore/core/templates/app/detail.html:88
+#: nextcloudappstore/core/templates/app/detail.html:107
 msgid "Co-Maintainers"
 msgstr "Comantenidors"
 
@@ -325,7 +325,7 @@ msgstr "Valoracions de l'aplicació"
 msgid "Full name"
 msgstr "Nom complet"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "Adreça de correu electrònic"
 
@@ -554,7 +554,7 @@ msgid "Category name which will be presented to the user"
 msgstr "Nom de la categoria que es presentarà a l'usuari"
 
 #: nextcloudappstore/core/models.py:718
-#: nextcloudappstore/core/templates/app/detail.html:103
+#: nextcloudappstore/core/templates/app/detail.html:122
 #: nextcloudappstore/scaffolding/forms.py:54
 #: nextcloudappstore/scaffolding/forms.py:88
 msgid "Categories"
@@ -674,7 +674,7 @@ msgid "App rating deletions"
 msgstr "Supressió de puntuacions d'aplicacions"
 
 #: nextcloudappstore/core/models.py:883
-#: nextcloudappstore/core/templates/app/detail.html:185
+#: nextcloudappstore/core/templates/app/detail.html:204
 msgid "Nextcloud version"
 msgstr "Versió del Nextcloud"
 
@@ -814,7 +814,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "Inici de sessió"
@@ -873,18 +872,20 @@ msgstr ""
 "Us hem enviat un correu. Si no l'heu rebut comproveu el correu brossa. "
 "Altrament, contacteu-nos si no l'heu rebut en uns pocs minuts."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "Clau d’API incorrecta"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "Canvia la contrasenya"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "Clau d’API incorrecta"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -894,10 +895,6 @@ msgstr ""
 "L’enllaç per restablir la contrasenya no era vàlid, possiblement perquè ja "
 "s'ha utilitzat.  Si us plau, sol·liciteu un <a "
 "href=\"%(passwd_reset_url)s\">nou restabliment de contrasenya</a>."
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "La contrasenya ha estat canviada."
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -1001,129 +998,133 @@ msgid "Community rating"
 msgstr "Valoració de la comunitat"
 
 #: nextcloudappstore/core/templates/app/detail.html:78
-msgid "Author"
-msgstr "Autor/a"
+msgid "Authors"
+msgstr ""
 
-#: nextcloudappstore/core/templates/app/detail.html:100
+#: nextcloudappstore/core/templates/app/detail.html:97
+msgid "Owner"
+msgstr "Propietat"
+
+#: nextcloudappstore/core/templates/app/detail.html:119
 msgid "Last updated"
 msgstr "Darrera actualització"
 
-#: nextcloudappstore/core/templates/app/detail.html:108
+#: nextcloudappstore/core/templates/app/detail.html:127
 msgid "Resources"
 msgstr "Recursos"
 
-#: nextcloudappstore/core/templates/app/detail.html:114
+#: nextcloudappstore/core/templates/app/detail.html:133
 msgid "User documentation"
 msgstr "Documentació d'usuari"
 
-#: nextcloudappstore/core/templates/app/detail.html:117
+#: nextcloudappstore/core/templates/app/detail.html:136
 msgid "Admin documentation"
 msgstr "Documentació d'administrador"
 
-#: nextcloudappstore/core/templates/app/detail.html:120
+#: nextcloudappstore/core/templates/app/detail.html:139
 #: nextcloudappstore/core/templates/nav.html:30
 msgid "Developer documentation"
 msgstr "Documentació per a desenvolupadors"
 
-#: nextcloudappstore/core/templates/app/detail.html:126
+#: nextcloudappstore/core/templates/app/detail.html:145
 msgid "Interact"
 msgstr "Interactuar"
 
-#: nextcloudappstore/core/templates/app/detail.html:132
+#: nextcloudappstore/core/templates/app/detail.html:151
 msgid "Report problem"
 msgstr "Informeu d'un problema"
 
-#: nextcloudappstore/core/templates/app/detail.html:138
+#: nextcloudappstore/core/templates/app/detail.html:157
 msgid "Request feature"
 msgstr "Sol·licitud de característica"
 
-#: nextcloudappstore/core/templates/app/detail.html:145
+#: nextcloudappstore/core/templates/app/detail.html:164
 msgid "Ask questions or discuss"
 msgstr "Fer preguntes o debatre"
 
-#: nextcloudappstore/core/templates/app/detail.html:150
+#: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Donate"
 msgstr "Dóna"
 
-#: nextcloudappstore/core/templates/app/detail.html:163
+#: nextcloudappstore/core/templates/app/detail.html:182
 msgid "Need Enterprise Support?"
 msgstr "Necessites suport d’empresa?"
 
-#: nextcloudappstore/core/templates/app/detail.html:168
+#: nextcloudappstore/core/templates/app/detail.html:187
 msgid "Request quote"
 msgstr "Demana pressupost"
 
-#: nextcloudappstore/core/templates/app/detail.html:170
+#: nextcloudappstore/core/templates/app/detail.html:189
 msgid "Recommended for large Nextcloud installations only."
 msgstr "Recomanat només per a instal·lacions grans de Nextcloud."
 
-#: nextcloudappstore/core/templates/app/detail.html:181
+#: nextcloudappstore/core/templates/app/detail.html:200
 #: nextcloudappstore/core/templates/app/releases.html:7
 #: nextcloudappstore/core/templates/app/releases.html:15
 msgid "Releases"
 msgstr "Llançaments"
 
-#: nextcloudappstore/core/templates/app/detail.html:186
+#: nextcloudappstore/core/templates/app/detail.html:205
 msgid "Stable channel"
 msgstr "Canal estable"
 
-#: nextcloudappstore/core/templates/app/detail.html:187
+#: nextcloudappstore/core/templates/app/detail.html:206
 msgid "Nightly channel"
 msgstr "Canal nocturn"
 
-#: nextcloudappstore/core/templates/app/detail.html:188
+#: nextcloudappstore/core/templates/app/detail.html:207
 msgid "All releases"
 msgstr "Tots els llançaments"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 #: nextcloudappstore/core/templates/app/releases.html:26
 #: nextcloudappstore/core/templates/app/releases.html:89
 msgid "nightly"
 msgstr "cada nit"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 msgid "Unstable"
 msgstr "Inestable"
 
-#: nextcloudappstore/core/templates/app/detail.html:217
+#: nextcloudappstore/core/templates/app/detail.html:236
 msgid "Ok"
 msgstr "D'acord"
 
-#: nextcloudappstore/core/templates/app/detail.html:238
-#: nextcloudappstore/core/templates/app/detail.html:252
+#: nextcloudappstore/core/templates/app/detail.html:257
+#: nextcloudappstore/core/templates/app/detail.html:271
 msgid "Appeal for spam"
 msgstr "Apel·lació al correu brossa"
 
-#: nextcloudappstore/core/templates/app/detail.html:243
-#: nextcloudappstore/core/templates/app/detail.html:256
+#: nextcloudappstore/core/templates/app/detail.html:262
+#: nextcloudappstore/core/templates/app/detail.html:275
 msgid "Cancel spam appeal"
 msgstr "Cancel·la l'apel·lació de correu brossa"
 
-#: nextcloudappstore/core/templates/app/detail.html:247
+#: nextcloudappstore/core/templates/app/detail.html:266
 msgid "Delete spam comment"
 msgstr "Suprimeix el comentari de correu brossa"
 
-#: nextcloudappstore/core/templates/app/detail.html:267
+#: nextcloudappstore/core/templates/app/detail.html:286
 msgid "No comments found."
 msgstr "No s'ha trobat cap comentari."
 
-#: nextcloudappstore/core/templates/app/detail.html:276
+#: nextcloudappstore/core/templates/app/detail.html:295
 msgid "Comments"
 msgstr "Comentaris"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate app"
 msgstr "Puntua l'aplicació"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate integration"
 msgstr "Integració de taxa"
 
-#: nextcloudappstore/core/templates/app/detail.html:289
+#: nextcloudappstore/core/templates/app/detail.html:308
 msgid "Your comment"
 msgstr "El teu comentari"
 
-#: nextcloudappstore/core/templates/app/detail.html:294
+#: nextcloudappstore/core/templates/app/detail.html:313
 msgid ""
 "Rating comments support <a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
@@ -1138,15 +1139,15 @@ msgstr ""
 "del teu comentari. Una puntuació sense comentari encara compta, però no "
 "apareixerà a continuació."
 
-#: nextcloudappstore/core/templates/app/detail.html:299
+#: nextcloudappstore/core/templates/app/detail.html:318
 msgid "Update rating"
 msgstr "S'està actualitzant la puntuació"
 
-#: nextcloudappstore/core/templates/app/detail.html:301
+#: nextcloudappstore/core/templates/app/detail.html:320
 msgid "Submit rating"
 msgstr "Envia la puntuació"
 
-#: nextcloudappstore/core/templates/app/detail.html:312
+#: nextcloudappstore/core/templates/app/detail.html:331
 msgid "Switch language for the comments:"
 msgstr "Canvia la llengua per als comentaris:"
 
@@ -1692,15 +1693,15 @@ msgstr "Continuar"
 msgid "Provided email address is not valid."
 msgstr "L'adreça de correu electrònic proporcionada no és vàlida."
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "Nom"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "Cognoms"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
@@ -1708,33 +1709,33 @@ msgstr ""
 "M'agradaria rebre notícies i actualitzacions dels desenvolupadors "
 "d'aplicacions de Nextcloud per correu electrònic"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "La vostra adreça de correu"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "Contrasenya"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "*Obligatori si el compte està registrat amb una contrasenya"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr ""
 "L'adreça de correu electrònic proporcionada no coincideix amb la vostra "
 "adreça de correu electrònic"
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "Contrasenya no vàlida"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "Confirma la contrasenya"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
@@ -1744,18 +1745,14 @@ msgstr ""
 "canvis no autoritzats a les dades crítiques del compte. Aquest camp no "
 "actualitza la teva contrasenya!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr ""
 "Aquesta adreça de correu electrònic ja està associada amb un altre compte."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "Cal una contrasenya per canviar aquests camps."
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "Adreça de correu"
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"

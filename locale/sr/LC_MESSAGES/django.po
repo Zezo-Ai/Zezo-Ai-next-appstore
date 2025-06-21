@@ -7,6 +7,7 @@
 # Slobodan Simić <slsimic@gmail.com>, 2020
 # Andy Scherzinger <info@andy-scherzinger.de>, 2022
 # Branko Kokanovic <branko@kokanovic.org>, 2024
+# Aleksandar Avramov <alex@energy-host.net>, 2025
 # Иван Пешић, 2025
 # 
 #, fuzzy
@@ -14,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-06-10 03:09+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
 "Last-Translator: Иван Пешић, 2025\n"
 "Language-Team: Serbian (https://app.transifex.com/nextcloud/teams/64236/sr/)\n"
@@ -42,7 +43,7 @@ msgid "Download"
 msgstr "Скини"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:220
+#: nextcloudappstore/core/templates/app/detail.html:239
 msgid "Bad"
 msgstr "Лоша"
 
@@ -51,7 +52,7 @@ msgid "OK"
 msgstr "У реду је"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:214
+#: nextcloudappstore/core/templates/app/detail.html:233
 msgid "Good"
 msgstr "Добра"
 
@@ -174,7 +175,7 @@ msgid "Issue tracker URL"
 msgstr "Адреса пратиоца проблема"
 
 #: nextcloudappstore/core/models.py:155 nextcloudappstore/core/models.py:492
-#: nextcloudappstore/core/templates/app/detail.html:111
+#: nextcloudappstore/core/templates/app/detail.html:130
 msgid "Homepage"
 msgstr "Почетна страна"
 
@@ -197,7 +198,7 @@ msgid "App owner"
 msgstr "Власник апликације"
 
 #: nextcloudappstore/core/models.py:163
-#: nextcloudappstore/core/templates/app/detail.html:88
+#: nextcloudappstore/core/templates/app/detail.html:107
 msgid "Co-Maintainers"
 msgstr "Одржаваоци"
 
@@ -315,7 +316,7 @@ msgstr "Оцене апликације"
 msgid "Full name"
 msgstr "Пуно име"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "Е-пошта"
 
@@ -543,7 +544,7 @@ msgid "Category name which will be presented to the user"
 msgstr "Име категорије онако како ће се показати кориснику"
 
 #: nextcloudappstore/core/models.py:718
-#: nextcloudappstore/core/templates/app/detail.html:103
+#: nextcloudappstore/core/templates/app/detail.html:122
 #: nextcloudappstore/scaffolding/forms.py:54
 #: nextcloudappstore/scaffolding/forms.py:88
 msgid "Categories"
@@ -663,7 +664,7 @@ msgid "App rating deletions"
 msgstr "Брисања рангирања апликације"
 
 #: nextcloudappstore/core/models.py:883
-#: nextcloudappstore/core/templates/app/detail.html:185
+#: nextcloudappstore/core/templates/app/detail.html:204
 msgid "Nextcloud version"
 msgstr "Некстклауд верзија"
 
@@ -804,7 +805,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "Пријава"
@@ -862,18 +862,20 @@ msgstr ""
 " непожељних порука. У супротном, контактирајте нас ако га не примите у року "
 "од неколико минута."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "Лош API токен"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "Промени лозинку"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "Лош API токен"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -883,10 +885,6 @@ msgstr ""
 "Веза за ресетовање лозинке је неисправна, вероватно зато што је већ "
 "искоришћена. Затражите <a href=\"%(passwd_reset_url)s\">ново ресетовање "
 "лозинке</a>."
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "Ваша лозинка је сада измењена."
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -988,129 +986,133 @@ msgid "Community rating"
 msgstr "Оцена заједнице"
 
 #: nextcloudappstore/core/templates/app/detail.html:78
-msgid "Author"
-msgstr "Аутор"
+msgid "Authors"
+msgstr "Аутори"
 
-#: nextcloudappstore/core/templates/app/detail.html:100
+#: nextcloudappstore/core/templates/app/detail.html:97
+msgid "Owner"
+msgstr "Власник"
+
+#: nextcloudappstore/core/templates/app/detail.html:119
 msgid "Last updated"
 msgstr "Последње ажурирање"
 
-#: nextcloudappstore/core/templates/app/detail.html:108
+#: nextcloudappstore/core/templates/app/detail.html:127
 msgid "Resources"
 msgstr "Ресурси"
 
-#: nextcloudappstore/core/templates/app/detail.html:114
+#: nextcloudappstore/core/templates/app/detail.html:133
 msgid "User documentation"
 msgstr "Корисничка документација"
 
-#: nextcloudappstore/core/templates/app/detail.html:117
+#: nextcloudappstore/core/templates/app/detail.html:136
 msgid "Admin documentation"
 msgstr "Администраторска документација"
 
-#: nextcloudappstore/core/templates/app/detail.html:120
+#: nextcloudappstore/core/templates/app/detail.html:139
 #: nextcloudappstore/core/templates/nav.html:30
 msgid "Developer documentation"
 msgstr "Програмерска документација"
 
-#: nextcloudappstore/core/templates/app/detail.html:126
+#: nextcloudappstore/core/templates/app/detail.html:145
 msgid "Interact"
 msgstr "Остварите узајамно деловање"
 
-#: nextcloudappstore/core/templates/app/detail.html:132
+#: nextcloudappstore/core/templates/app/detail.html:151
 msgid "Report problem"
 msgstr "Пријави проблем"
 
-#: nextcloudappstore/core/templates/app/detail.html:138
+#: nextcloudappstore/core/templates/app/detail.html:157
 msgid "Request feature"
 msgstr "Затражи функционалност"
 
-#: nextcloudappstore/core/templates/app/detail.html:145
+#: nextcloudappstore/core/templates/app/detail.html:164
 msgid "Ask questions or discuss"
 msgstr "Питајте питање или дискутујте"
 
-#: nextcloudappstore/core/templates/app/detail.html:150
+#: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Donate"
 msgstr "Донирај"
 
-#: nextcloudappstore/core/templates/app/detail.html:163
+#: nextcloudappstore/core/templates/app/detail.html:182
 msgid "Need Enterprise Support?"
 msgstr "Потребна вам је комерцијална подршка?"
 
-#: nextcloudappstore/core/templates/app/detail.html:168
+#: nextcloudappstore/core/templates/app/detail.html:187
 msgid "Request quote"
 msgstr "Затражи понуду"
 
-#: nextcloudappstore/core/templates/app/detail.html:170
+#: nextcloudappstore/core/templates/app/detail.html:189
 msgid "Recommended for large Nextcloud installations only."
 msgstr "Препоручује се само за велике Nextcloud инсталације."
 
-#: nextcloudappstore/core/templates/app/detail.html:181
+#: nextcloudappstore/core/templates/app/detail.html:200
 #: nextcloudappstore/core/templates/app/releases.html:7
 #: nextcloudappstore/core/templates/app/releases.html:15
 msgid "Releases"
 msgstr "Издања"
 
-#: nextcloudappstore/core/templates/app/detail.html:186
+#: nextcloudappstore/core/templates/app/detail.html:205
 msgid "Stable channel"
 msgstr "Стабилни канал"
 
-#: nextcloudappstore/core/templates/app/detail.html:187
+#: nextcloudappstore/core/templates/app/detail.html:206
 msgid "Nightly channel"
 msgstr "Ноћни канал"
 
-#: nextcloudappstore/core/templates/app/detail.html:188
+#: nextcloudappstore/core/templates/app/detail.html:207
 msgid "All releases"
 msgstr "Сва издања"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 #: nextcloudappstore/core/templates/app/releases.html:26
 #: nextcloudappstore/core/templates/app/releases.html:89
 msgid "nightly"
 msgstr "nightly"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 msgid "Unstable"
 msgstr "Нестабилно"
 
-#: nextcloudappstore/core/templates/app/detail.html:217
+#: nextcloudappstore/core/templates/app/detail.html:236
 msgid "Ok"
 msgstr "У реду"
 
-#: nextcloudappstore/core/templates/app/detail.html:238
-#: nextcloudappstore/core/templates/app/detail.html:252
+#: nextcloudappstore/core/templates/app/detail.html:257
+#: nextcloudappstore/core/templates/app/detail.html:271
 msgid "Appeal for spam"
 msgstr "Жалба за непожељно"
 
-#: nextcloudappstore/core/templates/app/detail.html:243
-#: nextcloudappstore/core/templates/app/detail.html:256
+#: nextcloudappstore/core/templates/app/detail.html:262
+#: nextcloudappstore/core/templates/app/detail.html:275
 msgid "Cancel spam appeal"
 msgstr "Откажи жалбу за непожељно"
 
-#: nextcloudappstore/core/templates/app/detail.html:247
+#: nextcloudappstore/core/templates/app/detail.html:266
 msgid "Delete spam comment"
 msgstr "Обриши коментар за непожељно"
 
-#: nextcloudappstore/core/templates/app/detail.html:267
+#: nextcloudappstore/core/templates/app/detail.html:286
 msgid "No comments found."
 msgstr "Нема коментара."
 
-#: nextcloudappstore/core/templates/app/detail.html:276
+#: nextcloudappstore/core/templates/app/detail.html:295
 msgid "Comments"
 msgstr "Коментари"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate app"
 msgstr "Оцените апликацију"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate integration"
 msgstr "Оцени интеграцију"
 
-#: nextcloudappstore/core/templates/app/detail.html:289
+#: nextcloudappstore/core/templates/app/detail.html:308
 msgid "Your comment"
 msgstr "Ваш коментар"
 
-#: nextcloudappstore/core/templates/app/detail.html:294
+#: nextcloudappstore/core/templates/app/detail.html:313
 msgid ""
 "Rating comments support <a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
@@ -1125,15 +1127,15 @@ msgstr ""
 "обавештени о Вашем коментару. Оцена без коментара се исто рачуна, али неће "
 "бити излистана испод."
 
-#: nextcloudappstore/core/templates/app/detail.html:299
+#: nextcloudappstore/core/templates/app/detail.html:318
 msgid "Update rating"
 msgstr "Ажурирај оцену"
 
-#: nextcloudappstore/core/templates/app/detail.html:301
+#: nextcloudappstore/core/templates/app/detail.html:320
 msgid "Submit rating"
 msgstr "Пошаљи оцену"
 
-#: nextcloudappstore/core/templates/app/detail.html:312
+#: nextcloudappstore/core/templates/app/detail.html:331
 msgid "Switch language for the comments:"
 msgstr "Промени језика за коментаре:"
 
@@ -1669,15 +1671,15 @@ msgstr "Настави"
 msgid "Provided email address is not valid."
 msgstr "Наведена имејл адреса није исправна."
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "Име"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "Презиме"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
@@ -1685,31 +1687,31 @@ msgstr ""
 "Желим да и-мејлом примам вести за програмера апликација и новости од "
 "Nextcloud"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "Адреса Ваше е-поште"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "Ваша лозинка"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "*Потребно је ако је налог био регистрован са лозинком"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr "Наведена и-мејл адреса се не подудара са вашом и-мејл адресом"
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "Неисправна лозинка"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "Потврдите лозинку"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
@@ -1719,17 +1721,13 @@ msgstr ""
 "се спречиле неодобрене измене критичних детаља налога. Ово поље не ажурира "
 "вашу лозинку!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "Ова и-мејл адреса је већ придружена неком другом налогу."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "За измену ових поља је потребна лозинка."
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "Адреса е-поште"
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"
