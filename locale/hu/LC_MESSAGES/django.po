@@ -10,22 +10,22 @@
 # Norbert Ézsiás, 2020
 # Balázs Úr, 2022
 # Főnyedi Áron <sajtman@gmail.com>, 2023
-# Balázs Meskó <meskobalazs@mailbox.org>, 2024
+# Falu <info@falu.me>, 2024
 # Gábor Baráth <dincsi@gmail.com>, 2024
 # Tiri Gor <gortiri@freemail.hu>, 2024
 # Lajos Seyler <lajos.seyler@gmail.com>, 2024
 # miles teg <varota@gmail.com>, 2024
-# Falu <info@falu.me>, 2024
-# Gyuris Gellért <jobel@ujevangelizacio.hu>, 2024
+# Gyuris Gellért <jobel@ujevangelizacio.hu>, 2025
+# Balázs Meskó <meskobalazs@mailbox.org>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-06-27 03:18+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
-"Last-Translator: Gyuris Gellért <jobel@ujevangelizacio.hu>, 2024\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>, 2025\n"
 "Language-Team: Hungarian (Hungary) (https://app.transifex.com/nextcloud/teams/64236/hu_HU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,7 +51,7 @@ msgid "Download"
 msgstr "Letöltés"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:220
+#: nextcloudappstore/core/templates/app/detail.html:239
 msgid "Bad"
 msgstr "Rossz"
 
@@ -60,7 +60,7 @@ msgid "OK"
 msgstr "OK"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:214
+#: nextcloudappstore/core/templates/app/detail.html:233
 msgid "Good"
 msgstr "Jó"
 
@@ -183,7 +183,7 @@ msgid "Issue tracker URL"
 msgstr "Hibakövető URL"
 
 #: nextcloudappstore/core/models.py:155 nextcloudappstore/core/models.py:492
-#: nextcloudappstore/core/templates/app/detail.html:111
+#: nextcloudappstore/core/templates/app/detail.html:130
 msgid "Homepage"
 msgstr "Honlap"
 
@@ -206,7 +206,7 @@ msgid "App owner"
 msgstr "Alkalmazásgazda"
 
 #: nextcloudappstore/core/models.py:163
-#: nextcloudappstore/core/templates/app/detail.html:88
+#: nextcloudappstore/core/templates/app/detail.html:107
 msgid "Co-Maintainers"
 msgstr "Társkarbantartók"
 
@@ -222,11 +222,11 @@ msgstr "Kiemelt"
 
 #: nextcloudappstore/core/models.py:167
 msgid "Orphan"
-msgstr "Elárvult"
+msgstr "Elárvulva"
 
 #: nextcloudappstore/core/models.py:168
 msgid "Enterprise supported"
-msgstr "Vállalatban támogatott"
+msgstr "Vállalati támogatású"
 
 #: nextcloudappstore/core/models.py:169
 msgid "Recent rating"
@@ -310,7 +310,7 @@ msgstr "Értékelő hozzászólás Markdownban"
 
 #: nextcloudappstore/core/models.py:443
 msgid "Appeal"
-msgstr "Megjelöl"
+msgstr "Jelentés"
 
 #: nextcloudappstore/core/models.py:447
 msgid "App rating"
@@ -324,7 +324,7 @@ msgstr "Alkalmazás-értékelések"
 msgid "Full name"
 msgstr "Teljes név"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "E-mail"
 
@@ -458,7 +458,7 @@ msgstr "Az AppAPI kiadás API hatókörei"
 
 #: nextcloudappstore/core/models.py:627
 msgid "App Release"
-msgstr "Alkalmazás kiadás"
+msgstr "Alkalmazás kiadása"
 
 #: nextcloudappstore/core/models.py:631
 msgid "Environment Variable Name"
@@ -466,7 +466,7 @@ msgstr "Környezeti változó neve"
 
 #: nextcloudappstore/core/models.py:632
 msgid "Display Name"
-msgstr "Megjelenített név"
+msgstr "Megjelenítendő név"
 
 #: nextcloudappstore/core/models.py:634
 msgid "Default Value"
@@ -474,11 +474,11 @@ msgstr "Alapértelmezett érték"
 
 #: nextcloudappstore/core/models.py:638
 msgid "AppAPI Release Environment Variable"
-msgstr "AppAPI kiadás környezeti változó"
+msgstr "AppAPI kiadás környezeti változója"
 
 #: nextcloudappstore/core/models.py:639
 msgid "AppAPI Release Environment Variables"
-msgstr "AppAPI kiadás környezeti változók"
+msgstr "AppAPI kiadás környezeti változói"
 
 #: nextcloudappstore/core/models.py:644
 msgid "Image URL"
@@ -505,7 +505,7 @@ msgstr "Képernyőképek"
 
 #: nextcloudappstore/core/models.py:666
 msgid "Donation URL"
-msgstr "Adományozási URL"
+msgstr "Adományozási webcím"
 
 #: nextcloudappstore/core/models.py:667
 msgid "Donation Type"
@@ -550,7 +550,7 @@ msgid "Category name which will be presented to the user"
 msgstr "Kategórianév, melyet a felhasználók látni fognak"
 
 #: nextcloudappstore/core/models.py:718
-#: nextcloudappstore/core/templates/app/detail.html:103
+#: nextcloudappstore/core/templates/app/detail.html:122
 #: nextcloudappstore/scaffolding/forms.py:54
 #: nextcloudappstore/scaffolding/forms.py:88
 msgid "Categories"
@@ -670,7 +670,7 @@ msgid "App rating deletions"
 msgstr "Alkalmazás értékeléseinek törlése"
 
 #: nextcloudappstore/core/models.py:883
-#: nextcloudappstore/core/templates/app/detail.html:185
+#: nextcloudappstore/core/templates/app/detail.html:204
 msgid "Nextcloud version"
 msgstr "Nextcloud verzió"
 
@@ -809,7 +809,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "Bejelentkezés"
@@ -864,22 +863,24 @@ msgid ""
 "We have sent you an email. If you have not received it please check your "
 "spam folder. Otherwise contact us if you do not receive it in a few minutes."
 msgstr ""
-"Küldtünk egy email. Ha nem kapta meg kérem ellenőrizze a spam "
-"könyvtárat.Egyébként, ha nem kapja meg pár percen belül, vegye fel velünk a "
+"Küldtünk egy e-mailt. Ha nem kapta meg, ellenőrizze a levélszemetek "
+"mappáját. Egyébként, ha nem kapja meg pár percen belül, vegye fel velünk a "
 "kapcsolatot."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "Hibás API token"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "Jelszó módosítása"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "Hibás API token"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -890,10 +891,6 @@ msgstr ""
 "már fel lett használva. Igényeljen újból egy <a "
 "href=\"%(passwd_reset_url)s\">jelszó visszaállítást</a>."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "A jelszava megváltozott."
-
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
 msgstr "Fiók létrehozása"
@@ -901,7 +898,7 @@ msgstr "Fiók létrehozása"
 #: nextcloudappstore/core/templates/account/verification_sent.html:9
 #: nextcloudappstore/core/templates/account/verification_sent.html:13
 msgid "Verify Your Email Address"
-msgstr "Ellenőrizze E-mail címét"
+msgstr "Ellenőrizze az e-mail-címét"
 
 #: nextcloudappstore/core/templates/account/verification_sent.html:16
 msgid ""
@@ -910,10 +907,10 @@ msgid ""
 "your main inbox, check your spam folder. Please contact us if you do not "
 "receive the verification email within a few minutes."
 msgstr ""
-"Küldtünk egy ellenőrző emailt. A megadott hivatkozást követve véglegesítheti"
-" a feliratkozást. Ha nem látja az ellenörző emailt a bejövő levelek közt, "
-"kérem ellenőrizze a spam könyvtárat. Ha nem kapja meg pár percen belül az "
-"ellenörző emailt, vegye fel velünk a kapcsolatot."
+"Küldtünk egy ellenőrző e-mailt. A megadott hivatkozást követve "
+"véglegesítheti a regisztrációt. Ha nem látja az ellenőrző e-mailt a bejövő "
+"levelek közt, akkor ellenőrizze a levélszemetek mappáját. Ha nem kapja meg "
+"pár percen belül az ellenőrző e-mailt, vegye fel velünk a kapcsolatot."
 
 #: nextcloudappstore/core/templates/admin/base_site.html:7
 msgid "Nextcloud App Store admin"
@@ -949,7 +946,7 @@ msgstr "Következő"
 
 #: nextcloudappstore/core/templates/app/detail.html:48
 msgid "This app has become part of the Nextcloud Server release packages."
-msgstr ""
+msgstr "Ez az alkalmazás a Nexctloud Server kiadási csomagjainak része lett."
 
 #: nextcloudappstore/core/templates/app/detail.html:50
 msgid ""
@@ -957,6 +954,9 @@ msgid ""
 "the Nextcloud Server the app will be updated to the latest version "
 "automatically."
 msgstr ""
+"Ezentúl nem az alkalmazástáron keresztül szállítják, hanem a Nextcloud "
+"Server frissítése során az alkalmazás automatikusan a legfrissebb verzióra "
+"lesz frissítve."
 
 #: nextcloudappstore/core/templates/app/detail.html:55
 msgid ""
@@ -969,12 +969,12 @@ msgid ""
 "It may no longer be maintained or supported and may have compatibility "
 "issues when used with more recent versions of Nextcloud."
 msgstr ""
-"Lehet, hogy már nem karbantartott vagy támogatott, ezért a legújabb "
+"Lehet, hogy már nincs karbantartva vagy támogatva, ezért a legújabb "
 "Nextcloud verziókat használva kompatibilitási probléma léphet fel."
 
 #: nextcloudappstore/core/templates/app/detail.html:63
 msgid "Orphan / Looking for Maintainer"
-msgstr "Elárvult / Támogató kerestetik"
+msgstr "Elárvult/karbantartót keres"
 
 #: nextcloudappstore/core/templates/app/detail.html:67
 msgid "Highest Nextcloud version"
@@ -989,129 +989,133 @@ msgid "Community rating"
 msgstr "Közösségi értékelés"
 
 #: nextcloudappstore/core/templates/app/detail.html:78
-msgid "Author"
-msgstr "Szerző"
+msgid "Authors"
+msgstr "Szerzők"
 
-#: nextcloudappstore/core/templates/app/detail.html:100
+#: nextcloudappstore/core/templates/app/detail.html:97
+msgid "Owner"
+msgstr "Tulajdonos"
+
+#: nextcloudappstore/core/templates/app/detail.html:119
 msgid "Last updated"
 msgstr "Utolsó frissítés"
 
-#: nextcloudappstore/core/templates/app/detail.html:108
+#: nextcloudappstore/core/templates/app/detail.html:127
 msgid "Resources"
 msgstr "Erőforrások"
 
-#: nextcloudappstore/core/templates/app/detail.html:114
+#: nextcloudappstore/core/templates/app/detail.html:133
 msgid "User documentation"
 msgstr "Felhasználói dokumentáció"
 
-#: nextcloudappstore/core/templates/app/detail.html:117
+#: nextcloudappstore/core/templates/app/detail.html:136
 msgid "Admin documentation"
 msgstr "Rendszergazdai dokumentáció"
 
-#: nextcloudappstore/core/templates/app/detail.html:120
+#: nextcloudappstore/core/templates/app/detail.html:139
 #: nextcloudappstore/core/templates/nav.html:30
 msgid "Developer documentation"
 msgstr "Fejlesztői dokumentáció"
 
-#: nextcloudappstore/core/templates/app/detail.html:126
+#: nextcloudappstore/core/templates/app/detail.html:145
 msgid "Interact"
 msgstr "Interakció"
 
-#: nextcloudappstore/core/templates/app/detail.html:132
+#: nextcloudappstore/core/templates/app/detail.html:151
 msgid "Report problem"
 msgstr "Probléma jelentése"
 
-#: nextcloudappstore/core/templates/app/detail.html:138
+#: nextcloudappstore/core/templates/app/detail.html:157
 msgid "Request feature"
 msgstr "Funkció kérése"
 
-#: nextcloudappstore/core/templates/app/detail.html:145
+#: nextcloudappstore/core/templates/app/detail.html:164
 msgid "Ask questions or discuss"
 msgstr "Kérdések felvetése vagy beszélgetés"
 
-#: nextcloudappstore/core/templates/app/detail.html:150
+#: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Donate"
 msgstr "Adományozás"
 
-#: nextcloudappstore/core/templates/app/detail.html:163
+#: nextcloudappstore/core/templates/app/detail.html:182
 msgid "Need Enterprise Support?"
-msgstr "Szüksége van Vállalati Támogatásra?"
+msgstr "Vállalati támogatásra van szüksége? beszerzése"
 
-#: nextcloudappstore/core/templates/app/detail.html:168
+#: nextcloudappstore/core/templates/app/detail.html:187
 msgid "Request quote"
 msgstr "Ajánlat kérése"
 
-#: nextcloudappstore/core/templates/app/detail.html:170
+#: nextcloudappstore/core/templates/app/detail.html:189
 msgid "Recommended for large Nextcloud installations only."
 msgstr "Csak nagyobb Nextcloud telepítésekhez ajánlott."
 
-#: nextcloudappstore/core/templates/app/detail.html:181
+#: nextcloudappstore/core/templates/app/detail.html:200
 #: nextcloudappstore/core/templates/app/releases.html:7
 #: nextcloudappstore/core/templates/app/releases.html:15
 msgid "Releases"
 msgstr "Kiadások"
 
-#: nextcloudappstore/core/templates/app/detail.html:186
+#: nextcloudappstore/core/templates/app/detail.html:205
 msgid "Stable channel"
 msgstr "Stabil csatorna"
 
-#: nextcloudappstore/core/templates/app/detail.html:187
+#: nextcloudappstore/core/templates/app/detail.html:206
 msgid "Nightly channel"
 msgstr "Fejlesztői csatorna"
 
-#: nextcloudappstore/core/templates/app/detail.html:188
+#: nextcloudappstore/core/templates/app/detail.html:207
 msgid "All releases"
 msgstr "Minden kiadás"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 #: nextcloudappstore/core/templates/app/releases.html:26
 #: nextcloudappstore/core/templates/app/releases.html:89
 msgid "nightly"
 msgstr "éjszakai"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 msgid "Unstable"
 msgstr "Instabil"
 
-#: nextcloudappstore/core/templates/app/detail.html:217
+#: nextcloudappstore/core/templates/app/detail.html:236
 msgid "Ok"
 msgstr "Rendben"
 
-#: nextcloudappstore/core/templates/app/detail.html:238
-#: nextcloudappstore/core/templates/app/detail.html:252
+#: nextcloudappstore/core/templates/app/detail.html:257
+#: nextcloudappstore/core/templates/app/detail.html:271
 msgid "Appeal for spam"
-msgstr "Megjelöl Spamnek"
+msgstr "Megjelölés kéretlenként"
 
-#: nextcloudappstore/core/templates/app/detail.html:243
-#: nextcloudappstore/core/templates/app/detail.html:256
+#: nextcloudappstore/core/templates/app/detail.html:262
+#: nextcloudappstore/core/templates/app/detail.html:275
 msgid "Cancel spam appeal"
-msgstr "Spam jelölés visszavonása"
+msgstr "Kéretlennek jelölés visszavonása"
 
-#: nextcloudappstore/core/templates/app/detail.html:247
+#: nextcloudappstore/core/templates/app/detail.html:266
 msgid "Delete spam comment"
-msgstr "Spam megjegyzés törlése"
+msgstr "Kéretlen megjegyzés törlése"
 
-#: nextcloudappstore/core/templates/app/detail.html:267
+#: nextcloudappstore/core/templates/app/detail.html:286
 msgid "No comments found."
 msgstr "Nincsenek hozzászólások."
 
-#: nextcloudappstore/core/templates/app/detail.html:276
+#: nextcloudappstore/core/templates/app/detail.html:295
 msgid "Comments"
 msgstr "Hozzászólások"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate app"
 msgstr "Alkalmazás értékelése"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate integration"
 msgstr "Integráció értékelése"
 
-#: nextcloudappstore/core/templates/app/detail.html:289
+#: nextcloudappstore/core/templates/app/detail.html:308
 msgid "Your comment"
 msgstr "Az Ön hozzászólása:"
 
-#: nextcloudappstore/core/templates/app/detail.html:294
+#: nextcloudappstore/core/templates/app/detail.html:313
 msgid ""
 "Rating comments support <a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
@@ -1120,21 +1124,21 @@ msgid ""
 "comment still counts, but will not be listed below."
 msgstr ""
 "Az értékelő hozzászólások támogatják a <a rel=\"noopener noreferrer\" "
-"href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
-"Ne használja az értékelő hozzászólásokat hibabejelentésre vagy funkciók "
-"kérésére. Sem a fejlesztők, sem a felhasználók nem értesülnek a "
+"href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a> "
+"formázást. Ne használja az értékelő hozzászólásokat hibabejelentésre vagy "
+"funkciók kérésére. Sem a fejlesztők, sem a felhasználók nem értesülnek a "
 "hozzászólásáról. A hozzászólás nélküli értékelések is számítanak, de nem "
 "lesznek megjelenítve alul."
 
-#: nextcloudappstore/core/templates/app/detail.html:299
+#: nextcloudappstore/core/templates/app/detail.html:318
 msgid "Update rating"
 msgstr "Értékelés frissítése"
 
-#: nextcloudappstore/core/templates/app/detail.html:301
+#: nextcloudappstore/core/templates/app/detail.html:320
 msgid "Submit rating"
 msgstr "Értékelés beküldése"
 
-#: nextcloudappstore/core/templates/app/detail.html:312
+#: nextcloudappstore/core/templates/app/detail.html:331
 msgid "Switch language for the comments:"
 msgstr "Hozzászólások nyelvének átváltása:"
 
@@ -1509,7 +1513,7 @@ msgstr "Alkalmazások a Nextcloud Folyamathoz"
 
 #: nextcloudappstore/core/templates/translation/db_translations.txt:29
 msgid "Artificial Intelligence apps"
-msgstr ""
+msgstr "MI-t használó alkalmazások"
 
 #: nextcloudappstore/core/templatetags/app_rating.py:12
 msgid "Very negative"
@@ -1533,19 +1537,19 @@ msgstr "Nagyon pozitív"
 
 #: nextcloudappstore/core/validators.py:15
 msgid "Enter a valid HTTPS URL"
-msgstr "Adjon meg egy érvényes HTTPS URL-t"
+msgstr "Adjon meg egy érvényes HTTPS webcímet"
 
 #: nextcloudappstore/core/validators.py:30
 msgid "URL contains invalid (control) characters."
-msgstr ""
+msgstr "A webcím érvénytelen (vezérlő)karaktereket tartalmaz."
 
 #: nextcloudappstore/core/validators.py:34
 msgid "URL must end with .tar.gz"
-msgstr ""
+msgstr "A webcímnek .tar.gz-vel kell végződnie"
 
 #: nextcloudappstore/scaffolding/forms.py:36
 msgid "The app name must be pascal case e.g. MyApp"
-msgstr ""
+msgstr "Az alkalmazás nevét CamelCase stílusban kell megadni, például MyApp"
 
 #: nextcloudappstore/scaffolding/forms.py:42
 #: nextcloudappstore/user/templates/user/enterprise-apps.html:18
@@ -1629,12 +1633,12 @@ msgstr "Az integráció teljes leírása. Markdownt tartalmazhat."
 #: nextcloudappstore/templates/socialaccount/authentication_error.html:7
 #: nextcloudappstore/templates/socialaccount/authentication_error.html:11
 msgid "Third-Party Login Failure"
-msgstr "3. fél Bejelentkezési Hiba"
+msgstr "Külső bejelentkezési hiba"
 
 #: nextcloudappstore/templates/socialaccount/authentication_error.html:13
 msgid ""
 "An error occurred while attempting to login via your third-party account."
-msgstr "Hiba lépett fel a 3. fél fiókjával történő bejelentkezés közben."
+msgstr "Hiba történt a külső fiókjával történő bejelentkezés során."
 
 #: nextcloudappstore/templates/socialaccount/login.html:9
 msgid "Sign In"
@@ -1668,64 +1672,63 @@ msgstr "Folytatás"
 
 #: nextcloudappstore/user/adapters.py:17
 msgid "Provided email address is not valid."
-msgstr "A megadott e-mail cím nem érvényes"
+msgstr "A megadott e-mail-cím nem érvényes"
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "Utónév"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "Vezetéknév"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
-msgstr ""
+msgstr "Alkalmazásfejlesztői híreket szeretnék kapni a Nexcloudtól e-mailben"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "Az Ön e-mail-címe"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "Az Ön jelszava"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
-msgstr "*Szükséges, ha a fiók jelszóval lett létrehova"
+msgstr "*Szükséges, ha a fiók jelszóval lett regisztrálva"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr "A megadott e-mail-cím nem egyezik az Ön e-mail-címével"
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "Érvénytelen jelszó"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "Jelszó megerősítésa"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
 "not update your password!"
 msgstr ""
+"Akkor szükséges, ha az utónevét, vezetéknevét vagy e-mail-címét változtatja "
+"meg, hogy ne végezhessenek illetéktelen módosításokat a kritikus "
+"fiókrészletein. A mező nem frissíti a jelszavát!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "Ez az e-mail-cím már egy másik fiókhoz lett hozzárendelve."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
-msgstr ""
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "E-mail-cím"
+msgstr "Jelszó szükséges a mezők módosításához."
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"
@@ -1776,11 +1779,11 @@ msgstr "API token újra előállítása"
 
 #: nextcloudappstore/user/templates/user/appeal-comments.html:8
 msgid "Appeal commentaries"
-msgstr "Megjelölési megjegyzések"
+msgstr "Jelentési megjegyzések"
 
 #: nextcloudappstore/user/templates/user/appeal-comments.html:12
 msgid "Comments Pending Appeal"
-msgstr "Függő megjelölések megjegyzései"
+msgstr "Függő jelentett hozzászólások"
 
 #: nextcloudappstore/user/templates/user/appeal-comments.html:17
 msgid "Comment author"
@@ -1828,7 +1831,7 @@ msgstr "Fiók törlése"
 
 #: nextcloudappstore/user/templates/user/base.html:68
 msgid "Appeal comments"
-msgstr "Megjelölési megjegyzések"
+msgstr "Jelentett hozzászólások"
 
 #: nextcloudappstore/user/templates/user/delete-account.html:13
 msgid ""
@@ -1842,7 +1845,7 @@ msgstr ""
 #: nextcloudappstore/user/templates/user/enterprise-apps.html:8
 #: nextcloudappstore/user/templates/user/enterprise-apps.html:11
 msgid "Enterprise App Support"
-msgstr "Vállalati Alkalmazás Támogatás"
+msgstr "Vállalati alkalmazástámogatás"
 
 #: nextcloudappstore/user/templates/user/enterprise-apps.html:13
 msgid ""
@@ -1851,10 +1854,10 @@ msgid ""
 "page in the App Store and in Nextcloud Apps. Such support can only be "
 "requested for large Nextcloud installations."
 msgstr ""
-"Ha az alkalmazáshoz elérhető vállalati támogatás, ezzel megjelölheti.  Ez "
-"hozzáadja az 'Ajánlat kérése' gombot az alkalmazás részletek oldalhoz az "
-"Alkalmazás Boltban és a Nextcloud Alkalmazásoknák. Ilyen támogatás csak a "
-"nagy Nextcloud telepítésekhez kérhető."
+"Ha az alkalmazáshoz vállalati támogatás érhető el, akkor megjelölheti ezzel."
+"  Ez hozzáadja az „Ajánlat kérése” gombot az alkalmazás részletező oldalához"
+" az Alkalmazástárban, és a Nextcloud Alkalmazásokban. Ilyen támogatás csak a"
+" nagy Nextcloud telepítésekhez kérhető."
 
 #: nextcloudappstore/user/templates/user/enterprise-apps.html:19
 msgid "Support status"
@@ -1944,9 +1947,9 @@ msgid ""
 "that you are looking for a new owner. Once the transfer is complete, the app"
 " will be automatically marked as un-orphaned/maintained again."
 msgstr ""
-"Nincs már tulajdonosa? Megjellheti az alakalmazást mint elhagyott jelezve, "
-"hogy egy új tulajdonosra van szükség. Amint az átküldés sikerül, az "
-"alkalmazás automatikusan újra támogatottá válik."
+"Még nincs új tulajdonosa? Megjelölheti az alkalmazást elárvultként, jelezve,"
+" hogy új tulajdonost keres. Amint az átadás sikerül, az alkalmazás "
+"automatikusan újra karbantartottá (nem árvává) válik."
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:20
 msgid "Ownership transfer status"
@@ -1962,23 +1965,23 @@ msgstr "Tulajdonjog-átadási állapot módosítása"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:23
 msgid "Change app status"
-msgstr "Alkalmzás állapotának megváltoztatása"
+msgstr "Alkalmazás állapotának megváltoztatása"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:30
 msgid "Unlocked"
-msgstr "Feloldás"
+msgstr "Feloldva"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:32
 msgid "Locked"
-msgstr "Zárolt"
+msgstr "Zárolva"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:37
 msgid "Orphaned"
-msgstr "Elárvult"
+msgstr "Elárvulva"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:39
 msgid "Maintained"
-msgstr "Karbantartott"
+msgstr "Karbantartva"
 
 #: nextcloudappstore/user/templates/user/transfer-apps.html:46
 msgid "Lock ownership transfer"

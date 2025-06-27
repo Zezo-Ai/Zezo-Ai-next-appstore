@@ -10,6 +10,7 @@
 # Arda Kılıçdağı <ardakilicdagi@gmail.com>, 2017
 # Kemal Oktay Aktoğan <oktay454@disroot.org>, 2020
 # Hüseyin Fahri Uzun <mail@fahriuzun.com>, 2020
+# Volkan Gezer <volkangezer@gmail.com>, 2025
 # Kaya Zeren <kayazeren@gmail.com>, 2025
 # 
 #, fuzzy
@@ -17,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 03:13+0000\n"
+"POT-Creation-Date: 2025-06-27 03:18+0000\n"
 "PO-Revision-Date: 2016-09-05 12:43+0000\n"
 "Last-Translator: Kaya Zeren <kayazeren@gmail.com>, 2025\n"
 "Language-Team: Turkish (https://app.transifex.com/nextcloud/teams/64236/tr/)\n"
@@ -45,7 +46,7 @@ msgid "Download"
 msgstr "İndir"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:220
+#: nextcloudappstore/core/templates/app/detail.html:239
 msgid "Bad"
 msgstr "Kötü"
 
@@ -54,7 +55,7 @@ msgid "OK"
 msgstr "Tamam"
 
 #: nextcloudappstore/core/forms.py:21
-#: nextcloudappstore/core/templates/app/detail.html:214
+#: nextcloudappstore/core/templates/app/detail.html:233
 msgid "Good"
 msgstr "İyi"
 
@@ -177,7 +178,7 @@ msgid "Issue tracker URL"
 msgstr "Sorun izleme bağlantısı"
 
 #: nextcloudappstore/core/models.py:155 nextcloudappstore/core/models.py:492
-#: nextcloudappstore/core/templates/app/detail.html:111
+#: nextcloudappstore/core/templates/app/detail.html:130
 msgid "Homepage"
 msgstr "Ana sayfa"
 
@@ -200,7 +201,7 @@ msgid "App owner"
 msgstr "Uygulama sahibi"
 
 #: nextcloudappstore/core/models.py:163
-#: nextcloudappstore/core/templates/app/detail.html:88
+#: nextcloudappstore/core/templates/app/detail.html:107
 msgid "Co-Maintainers"
 msgstr "Yardımcılar"
 
@@ -256,9 +257,9 @@ msgid ""
 "If enabled, a user can try to register the same app again using the public "
 "certificate and signature. If he does, the app will be transferred to him."
 msgstr ""
-"Bu seçenek kullanıma alındığında, kullanıcılar herkese açık sertifika ve "
-"imzayı kullanarak yeniden aynı uygulamayı kaydetmeyi deneyebilir. Bu işlemi "
-"yaptığında uygulama ona aktarılır."
+"Etkin ise, kullanıcılar herkese açık sertifika ve imzayı kullanarak yeniden "
+"aynı uygulamayı kaydetmeyi deneyebilir. Bu işlemi yaptığında uygulama ona "
+"aktarılır."
 
 #: nextcloudappstore/core/models.py:184
 msgid "Integration (i.e. Outlook plugin)"
@@ -318,7 +319,7 @@ msgstr "Uygulama değerlendirmeleri"
 msgid "Full name"
 msgstr "Tam ad"
 
-#: nextcloudappstore/core/models.py:493 nextcloudappstore/user/forms.py:161
+#: nextcloudappstore/core/models.py:493
 msgid "Email"
 msgstr "E-posta"
 
@@ -340,7 +341,7 @@ msgstr "PHP eklenti bağımlılığı"
 
 #: nextcloudappstore/core/models.py:515 nextcloudappstore/core/models.py:775
 msgid "Database dependency"
-msgstr "Veri tabanı bağımlılığı"
+msgstr "Veritabanı bağımlılığı"
 
 #: nextcloudappstore/core/models.py:517 nextcloudappstore/core/models.py:738
 msgid "License"
@@ -546,7 +547,7 @@ msgid "Category name which will be presented to the user"
 msgstr "Kullanıcıya görüntülenecek kategori adı"
 
 #: nextcloudappstore/core/models.py:718
-#: nextcloudappstore/core/templates/app/detail.html:103
+#: nextcloudappstore/core/templates/app/detail.html:122
 #: nextcloudappstore/scaffolding/forms.py:54
 #: nextcloudappstore/scaffolding/forms.py:88
 msgid "Categories"
@@ -571,11 +572,11 @@ msgstr "Bir veri tabanının belirlenmesini sağlayan anahtar"
 
 #: nextcloudappstore/core/models.py:754
 msgid "Database name which will be presented to the user"
-msgstr "Kullanıcıya görüntülenecek veri tabanı adı"
+msgstr "Kullanıcıya görüntülenecek veritabanı adı"
 
 #: nextcloudappstore/core/models.py:758 nextcloudappstore/core/models.py:770
 msgid "Database"
-msgstr "Veri tabanı"
+msgstr "Veritabanı"
 
 #: nextcloudappstore/core/models.py:759
 #: nextcloudappstore/core/templates/app/releases.html:54
@@ -584,15 +585,15 @@ msgstr "Veri tabanları"
 
 #: nextcloudappstore/core/models.py:771
 msgid "Database version requirement"
-msgstr "Gerekli veri tabanı sürümü"
+msgstr "Gerekli veritabanı sürümü"
 
 #: nextcloudappstore/core/models.py:772
 msgid "Database version requirement (raw)"
-msgstr "Gerekli veri tabanı sürümü (ham)"
+msgstr "Gerekli veritabanı sürümü (ham)"
 
 #: nextcloudappstore/core/models.py:776
 msgid "Database dependencies"
-msgstr "Veri tabanı bağımlılıkları"
+msgstr "Veritabanı bağımlılıkları"
 
 #: nextcloudappstore/core/models.py:785
 msgid "e.g. libxml"
@@ -666,7 +667,7 @@ msgid "App rating deletions"
 msgstr "Uygulama değerlendirmesi silmeleri"
 
 #: nextcloudappstore/core/models.py:883
-#: nextcloudappstore/core/templates/app/detail.html:185
+#: nextcloudappstore/core/templates/app/detail.html:204
 msgid "Nextcloud version"
 msgstr "Nextcloud sürümü"
 
@@ -806,7 +807,6 @@ msgstr ""
 #: nextcloudappstore/core/templates/account/login.html:15
 #: nextcloudappstore/core/templates/account/login.html:24
 #: nextcloudappstore/core/templates/account/password_reset.html:10
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:10
 #: nextcloudappstore/core/templates/nav.html:130
 msgid "Log in"
 msgstr "Oturum aç"
@@ -863,18 +863,20 @@ msgstr ""
 "klasörünüze bakın. E-postayı birkaç dakika içinde almazsanız bizimle "
 "görüşün."
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
-msgid "Bad API Token"
-msgstr "API kodu yanlış"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:14
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:11
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
 #: nextcloudappstore/core/templates/account/password_reset_from_key.html:43
+#: nextcloudappstore/core/templates/account/password_reset_from_key_done.html:11
 #: nextcloudappstore/user/templates/user/password.html:11
 #: nextcloudappstore/user/templates/user/password.html:20
 msgid "Change Password"
 msgstr "Parolayı değiştir"
 
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:18
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:15
+msgid "Bad API Token"
+msgstr "API kodu yanlış"
+
+#: nextcloudappstore/core/templates/account/password_reset_from_key.html:19
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -884,10 +886,6 @@ msgstr ""
 "Parolayı değiştirme bağlantısı daha önce kullanıldığından geçersiz. Lütfen "
 "<a href=\"%(passwd_reset_url)s\">yeni bir parola sıfırlama isteğinde "
 "bulunun</a>"
-
-#: nextcloudappstore/core/templates/account/password_reset_from_key.html:46
-msgid "Your password is now changed."
-msgstr "Parolanız değiştirildi."
 
 #: nextcloudappstore/core/templates/account/signup.html:15
 msgid "Create an account"
@@ -985,129 +983,133 @@ msgid "Community rating"
 msgstr "Topluluk değerlendirmesi"
 
 #: nextcloudappstore/core/templates/app/detail.html:78
-msgid "Author"
-msgstr "İlgili"
+msgid "Authors"
+msgstr ""
 
-#: nextcloudappstore/core/templates/app/detail.html:100
+#: nextcloudappstore/core/templates/app/detail.html:97
+msgid "Owner"
+msgstr "Sahibi"
+
+#: nextcloudappstore/core/templates/app/detail.html:119
 msgid "Last updated"
 msgstr "Son güncelleme"
 
-#: nextcloudappstore/core/templates/app/detail.html:108
+#: nextcloudappstore/core/templates/app/detail.html:127
 msgid "Resources"
 msgstr "Kaynaklar"
 
-#: nextcloudappstore/core/templates/app/detail.html:114
+#: nextcloudappstore/core/templates/app/detail.html:133
 msgid "User documentation"
 msgstr "Kullanıcı belgeleri"
 
-#: nextcloudappstore/core/templates/app/detail.html:117
+#: nextcloudappstore/core/templates/app/detail.html:136
 msgid "Admin documentation"
 msgstr "Yönetici belgeleri"
 
-#: nextcloudappstore/core/templates/app/detail.html:120
+#: nextcloudappstore/core/templates/app/detail.html:139
 #: nextcloudappstore/core/templates/nav.html:30
 msgid "Developer documentation"
 msgstr "Geliştirici belgeleri"
 
-#: nextcloudappstore/core/templates/app/detail.html:126
+#: nextcloudappstore/core/templates/app/detail.html:145
 msgid "Interact"
 msgstr "Ulaşın"
 
-#: nextcloudappstore/core/templates/app/detail.html:132
+#: nextcloudappstore/core/templates/app/detail.html:151
 msgid "Report problem"
 msgstr "Sorun bildirin"
 
-#: nextcloudappstore/core/templates/app/detail.html:138
+#: nextcloudappstore/core/templates/app/detail.html:157
 msgid "Request feature"
 msgstr "Özellik isteyin"
 
-#: nextcloudappstore/core/templates/app/detail.html:145
+#: nextcloudappstore/core/templates/app/detail.html:164
 msgid "Ask questions or discuss"
 msgstr "Soru sorun ya da tartışın"
 
-#: nextcloudappstore/core/templates/app/detail.html:150
+#: nextcloudappstore/core/templates/app/detail.html:169
 msgid "Donate"
 msgstr "Bağış yapın"
 
-#: nextcloudappstore/core/templates/app/detail.html:163
+#: nextcloudappstore/core/templates/app/detail.html:182
 msgid "Need Enterprise Support?"
 msgstr "Kurumsal destek almak mı istiyorsunuz?"
 
-#: nextcloudappstore/core/templates/app/detail.html:168
+#: nextcloudappstore/core/templates/app/detail.html:187
 msgid "Request quote"
 msgstr "Teklif isteyin"
 
-#: nextcloudappstore/core/templates/app/detail.html:170
+#: nextcloudappstore/core/templates/app/detail.html:189
 msgid "Recommended for large Nextcloud installations only."
 msgstr "Yalnızca büyük Nextcloud kurulumları için önerilir."
 
-#: nextcloudappstore/core/templates/app/detail.html:181
+#: nextcloudappstore/core/templates/app/detail.html:200
 #: nextcloudappstore/core/templates/app/releases.html:7
 #: nextcloudappstore/core/templates/app/releases.html:15
 msgid "Releases"
 msgstr "Sürümler"
 
-#: nextcloudappstore/core/templates/app/detail.html:186
+#: nextcloudappstore/core/templates/app/detail.html:205
 msgid "Stable channel"
 msgstr "Kararlı sürüm kanalı"
 
-#: nextcloudappstore/core/templates/app/detail.html:187
+#: nextcloudappstore/core/templates/app/detail.html:206
 msgid "Nightly channel"
 msgstr "Gecelik sürüm kanalı"
 
-#: nextcloudappstore/core/templates/app/detail.html:188
+#: nextcloudappstore/core/templates/app/detail.html:207
 msgid "All releases"
 msgstr "Tüm sürümler"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 #: nextcloudappstore/core/templates/app/releases.html:26
 #: nextcloudappstore/core/templates/app/releases.html:89
 msgid "nightly"
 msgstr "Gecelik"
 
-#: nextcloudappstore/core/templates/app/detail.html:196
+#: nextcloudappstore/core/templates/app/detail.html:215
 msgid "Unstable"
 msgstr "Kararsız"
 
-#: nextcloudappstore/core/templates/app/detail.html:217
+#: nextcloudappstore/core/templates/app/detail.html:236
 msgid "Ok"
 msgstr "Tamam"
 
-#: nextcloudappstore/core/templates/app/detail.html:238
-#: nextcloudappstore/core/templates/app/detail.html:252
+#: nextcloudappstore/core/templates/app/detail.html:257
+#: nextcloudappstore/core/templates/app/detail.html:271
 msgid "Appeal for spam"
 msgstr "İstenemeyen yeniden değerlendirmesi"
 
-#: nextcloudappstore/core/templates/app/detail.html:243
-#: nextcloudappstore/core/templates/app/detail.html:256
+#: nextcloudappstore/core/templates/app/detail.html:262
+#: nextcloudappstore/core/templates/app/detail.html:275
 msgid "Cancel spam appeal"
 msgstr "İstenmeyen yeniden değerlendirmesini iptal et"
 
-#: nextcloudappstore/core/templates/app/detail.html:247
+#: nextcloudappstore/core/templates/app/detail.html:266
 msgid "Delete spam comment"
 msgstr "İstenmeyen yorumu sil"
 
-#: nextcloudappstore/core/templates/app/detail.html:267
+#: nextcloudappstore/core/templates/app/detail.html:286
 msgid "No comments found."
 msgstr "Henüz bir yorum yok."
 
-#: nextcloudappstore/core/templates/app/detail.html:276
+#: nextcloudappstore/core/templates/app/detail.html:295
 msgid "Comments"
 msgstr "Yorumlar"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate app"
 msgstr "Uygulamayı değerlendirin"
 
-#: nextcloudappstore/core/templates/app/detail.html:283
+#: nextcloudappstore/core/templates/app/detail.html:302
 msgid "Rate integration"
 msgstr "Bütünleştirmeyi değerlendirin"
 
-#: nextcloudappstore/core/templates/app/detail.html:289
+#: nextcloudappstore/core/templates/app/detail.html:308
 msgid "Your comment"
 msgstr "Yorumunuz"
 
-#: nextcloudappstore/core/templates/app/detail.html:294
+#: nextcloudappstore/core/templates/app/detail.html:313
 msgid ""
 "Rating comments support <a rel=\"noopener noreferrer\" "
 "href=\"https://daringfireball.net/projects/markdown/syntax\">Markdown</a>. "
@@ -1121,15 +1123,15 @@ msgstr ""
 "Geliştirici ya da kullanıcılar yorumunuzu farketmez. Yorum bulunmayan "
 "değerlendirmeler de hesaba katılır ancak aşağıda görüntülenmez."
 
-#: nextcloudappstore/core/templates/app/detail.html:299
+#: nextcloudappstore/core/templates/app/detail.html:318
 msgid "Update rating"
 msgstr "Değerlendirmeyi güncelle"
 
-#: nextcloudappstore/core/templates/app/detail.html:301
+#: nextcloudappstore/core/templates/app/detail.html:320
 msgid "Submit rating"
 msgstr "Değerlendirmeyi gönder"
 
-#: nextcloudappstore/core/templates/app/detail.html:312
+#: nextcloudappstore/core/templates/app/detail.html:331
 msgid "Switch language for the comments:"
 msgstr "Yorum dilini değiştir:"
 
@@ -1666,15 +1668,15 @@ msgstr "Sürdür"
 msgid "Provided email address is not valid."
 msgstr "Belirtilen e-posta adresi geçersiz."
 
-#: nextcloudappstore/user/forms.py:24
+#: nextcloudappstore/user/forms.py:21
 msgid "First name"
 msgstr "Ad"
 
-#: nextcloudappstore/user/forms.py:25
+#: nextcloudappstore/user/forms.py:22
 msgid "Last name"
 msgstr "Soyad"
 
-#: nextcloudappstore/user/forms.py:27 nextcloudappstore/user/forms.py:82
+#: nextcloudappstore/user/forms.py:24 nextcloudappstore/user/forms.py:79
 msgid ""
 "I would like to receive app developer news and updates from Nextcloud by "
 "email"
@@ -1682,31 +1684,31 @@ msgstr ""
 "Nextcloud uygulama geliştiricisi haberlerini ve güncellemelerini e-posta ile"
 " almak istiyorum"
 
-#: nextcloudappstore/user/forms.py:43
+#: nextcloudappstore/user/forms.py:40
 msgid "Your email address"
 msgstr "E-posta adresiniz"
 
-#: nextcloudappstore/user/forms.py:47
+#: nextcloudappstore/user/forms.py:44
 msgid "Your password"
 msgstr "Parolanız"
 
-#: nextcloudappstore/user/forms.py:48
+#: nextcloudappstore/user/forms.py:45
 msgid "*Required if the account is registered with a password"
 msgstr "*Hesap bir parola ile kayıt edilmiş ise gereklidir"
 
-#: nextcloudappstore/user/forms.py:59
+#: nextcloudappstore/user/forms.py:56
 msgid "The given email address does not match your email address"
 msgstr "Yazdığınız e-posta adresi kayıtlı adresiniz ile aynı değil"
 
-#: nextcloudappstore/user/forms.py:67 nextcloudappstore/user/forms.py:113
+#: nextcloudappstore/user/forms.py:64 nextcloudappstore/user/forms.py:110
 msgid "Invalid password"
 msgstr "Parola geçersiz"
 
-#: nextcloudappstore/user/forms.py:73
+#: nextcloudappstore/user/forms.py:70
 msgid "Confirm password"
 msgstr "Parola onayı"
 
-#: nextcloudappstore/user/forms.py:75
+#: nextcloudappstore/user/forms.py:72
 msgid ""
 "Required when changing your First Name, Last Name, or Email Address to "
 "prevent unauthorized changes to critical account details. This field does "
@@ -1716,17 +1718,13 @@ msgstr ""
 "Adınızı, Soyadınızı veya E-posta adresinizi değiştirirken istenir. Bu alan "
 "parolanızı güncellemez!"
 
-#: nextcloudappstore/user/forms.py:105
+#: nextcloudappstore/user/forms.py:102
 msgid "This email address is already associated with another account."
 msgstr "Bu e-posta adresi zaten başka bir hesapla ilişkili."
 
-#: nextcloudappstore/user/forms.py:153
+#: nextcloudappstore/user/forms.py:150
 msgid "Password is required to change these fields."
 msgstr "Bu alanları değiştirmek için parola yazılması gerekir."
-
-#: nextcloudappstore/user/forms.py:167
-msgid "Email address"
-msgstr "E-posta adresi"
 
 #: nextcloudappstore/user/signals.py:39
 msgid "Nextcloud app store password changed"
